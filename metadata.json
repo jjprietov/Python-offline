@@ -1,0 +1,8 @@
+{
+  "name": "Remix Intérprete Python 3",
+  "description": "Una aplicación educativa para exámenes de Python que funciona 100% offline con editor de código y consola.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

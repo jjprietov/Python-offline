@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-surface: var(--color-surface);
+  --color-surface-dim: var(--color-surface-dim);
+  --color-surface-bright: var(--color-surface-bright);
+  --color-surface-container-lowest: var(--color-surface-container-lowest);
+  --color-surface-container-low: var(--color-surface-container-low);
+  --color-surface-container: var(--color-surface-container);
+  --color-surface-container-high: var(--color-surface-container-high);
+  --color-surface-container-highest: var(--color-surface-container-highest);
+  --color-on-surface: var(--color-on-surface);
+  --color-on-surface-variant: var(--color-on-surface-variant);
+  --color-inverse-surface: var(--color-inverse-surface);
+  --color-inverse-on-surface: var(--color-inverse-on-surface);
+  --color-outline: var(--color-outline);
+  --color-outline-variant: var(--color-outline-variant);
+  --color-surface-tint: var(--color-surface-tint);
+  --color-primary: var(--color-primary);
+  --color-on-primary: var(--color-on-primary);
+  --color-primary-container: var(--color-primary-container);
+  --color-on-primary-container: var(--color-on-primary-container);
+  --color-inverse-primary: var(--color-inverse-primary);
+
+  /* Syntax specific colors */
+  --color-python-keyword: var(--color-python-keyword);
+  --color-python-string: var(--color-python-string);
+  --color-python-number: var(--color-python-number);
+  --color-python-function: var(--color-python-function);
+  --color-python-comment: var(--color-python-comment);
+  --color-python-variable: var(--color-python-variable);
+
+  --color-error: var(--color-error);
+  --color-on-error: #ffffff;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+}
+
+:root {
+  --color-surface: #1e1e1e;
+  --color-surface-dim: #181818;
+  --color-surface-bright: #3e3e42;
+  --color-surface-container-lowest: #121212;
+  --color-surface-container-low: #181818;
+  --color-surface-container: #252526;
+  --color-surface-container-high: #2d2d2d;
+  --color-surface-container-highest: #383838;
+  --color-on-surface: #cccccc;
+  --color-on-surface-variant: #858585;
+  --color-inverse-surface: #e3e0f7;
+  --color-inverse-on-surface: #2f2f40;
+  --color-outline: #383838;
+  --color-outline-variant: #2d2d2d;
+  --color-surface-tint: #007acc;
+  --color-primary: #007acc;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #007acc;
+  --color-on-primary-container: #ffffff;
+  --color-inverse-primary: #006e2f;
+
+  /* Syntax specific colors */
+  --color-python-keyword: #c586c0;
+  --color-python-string: #ce9178;
+  --color-python-number: #b5cea8;
+  --color-python-function: #dcdcaa;
+  --color-python-comment: #6a9955;
+  --color-python-variable: #9cdcfe;
+
+  --color-error: #f48771;
+  --color-scrollbar-track: #1e1e1e;
+  --color-scrollbar-thumb: #333333;
+  --color-scrollbar-thumb-hover: #444444;
+}
+
+.light, [data-theme="light"] {
+  --color-surface: #ffffff;
+  --color-surface-dim: #f8fafc;
+  --color-surface-bright: #e2e8f0;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f8fafc;
+  --color-surface-container: #f1f5f9;
+  --color-surface-container-high: #e2e8f0;
+  --color-surface-container-highest: #cbd5e1;
+  --color-on-surface: #0f172a;
+  --color-on-surface-variant: #64748b;
+  --color-inverse-surface: #1e1e1e;
+  --color-inverse-on-surface: #f8fafc;
+  --color-outline: #e2e8f0;
+  --color-outline-variant: #cbd5e1;
+  --color-surface-tint: #0284c7;
+  --color-primary: #0284c7;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0284c7;
+  --color-on-primary-container: #ffffff;
+  --color-inverse-primary: #0284c7;
+
+  /* Syntax specific colors for light mode */
+  --color-python-keyword: #7e22ce;
+  --color-python-string: #b45309;
+  --color-python-number: #047857;
+  --color-python-function: #2563eb;
+  --color-python-comment: #16a34a;
+  --color-python-variable: #0f172a;
+
+  --color-error: #dc2626;
+  --color-scrollbar-track: #f1f5f9;
+  --color-scrollbar-thumb: #cbd5e1;
+  --color-scrollbar-thumb-hover: #94a3b8;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans;
+  }
+
+  /* Prism Overrides for VS Code dark style */
+  .token.comment { color: var(--color-python-comment); font-style: italic; }
+  .token.keyword { color: var(--color-python-keyword); font-weight: 500; }
+  .token.string { color: var(--color-python-string); }
+  .token.number { color: var(--color-python-number); }
+  .token.function { color: var(--color-python-function); }
+  .token.builtin { color: var(--color-python-function); }
+  .token.operator { color: var(--color-on-surface); }
+  .token.boolean { color: #569cd6; }
+  .token.class-name { color: #4ec9b0; }
+  .token.parameter { color: var(--color-python-variable); }
+  .token.variable { color: var(--color-python-variable); }
+  .token.triple-quoted-string { color: var(--color-python-string); }
+
+  /* Prism light mode adjustments */
+  .light .token.operator { color: #475569; }
+  .light .token.boolean { color: #0284c7; }
+  .light .token.class-name { color: #0f766e; }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar-thumb-hover);
+}

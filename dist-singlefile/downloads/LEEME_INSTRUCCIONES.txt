@@ -1,0 +1,30 @@
+============================================================
+INTÉRPRETE PYTHON 3 - EDICIÓN PORTABLE 100% OFFLINE (USB / PC)
+============================================================
+
+¡Esta aplicación está lista para usarse completamente OFFLINE sin internet!
+
+CONTENIDO DEL PAQUETE:
+1. Interprete_Python_3.exe
+   - Ejecutable directo para Windows (con icono oficial de Python).
+   - Doble clic y se abrirá inmediatamente en una ventana de aplicación.
+   - NO requiere tener Python instalado en el ordenador.
+   - NO requiere permisos de administrador.
+   - NO requiere conexión a internet (funciona 100% offline).
+
+2. Interprete_Python_Offline.html
+   - Versión autónoma en un único archivo.
+   - Puedes abrirlo con doble clic en cualquier navegador (Chrome, Edge, Firefox, Safari)
+     en Windows, macOS o Linux sin conexión a internet.
+
+3. python.ico
+   - Icono oficial de Python por si quieres crear accesos directos personalizados.
+
+INSTRUCCIONES PARA EXÁMENES O AULAS:
+1. Copia el archivo 'Interprete_Python_3.exe' a tu memoria USB o al Escritorio del PC.
+2. Desconecta el cable de red o apaga el Wi-Fi si el examen requiere estar desconectado.
+3. Haz doble clic sobre 'Interprete_Python_3.exe'.
+4. ¡Listo! Escribe tu código, ejecuta con el botón 'Ejecutar Código' y visualiza la salida y entradas interactivas (input).
+5. Puedes guardar tus ejercicios con el botón de guardar (.py) directamente a tu memoria USB.
+
+============================================================
